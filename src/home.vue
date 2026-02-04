@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<h1>Lemonade Stand Home Page</h1>
+<h1>Abel Wedding Home Page</h1>
 </template>
 
 <style scoped>
