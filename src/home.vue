@@ -23,8 +23,11 @@
         <v-img src="winterfest.jpg" class="border-solid" width="50%" style="margin-top: 5%"></v-img>
       </v-container>
       <h1 class="text-center">June 5, 2027 - Crete, IL</h1>
+      <v-divider/>
       <h2 class="text-center">{{countdown}} days</h2>
-      <p class="text-center text-h5">Both of us are excited to share this special day with you!</p>
+      <br>
+      <p class="text-center text-h5">Both of us are excited to share this special day with you! This is the one stop
+        shop to get addresses, RSVP, access our registry, and upload photos of our special day!</p>
     </v-col>
     <v-col class="d-flex justify-end">
       <v-img src="vine-flower.jpg" class="flower" width="20%" cover></v-img>

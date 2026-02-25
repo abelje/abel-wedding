@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<h1>About Placeholder</h1>
+<h1>Locations</h1>
 </template>
 
 <style scoped>

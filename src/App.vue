@@ -1,11 +1,17 @@
 <script setup>
 import { ref, computed } from 'vue'
 import home from './home.vue'
-import about from './about.vue'
+import location from './location.vue'
+import rsvp from "./rsvp.vue";
+import registry from "./registry.vue";
+import photos from './photos.vue'
 
 const routes = {
   '/': home,
-  '/about': about
+  '/location': location,
+  '/rsvp': rsvp,
+  '/registry': registry,
+  '/photos': photos
 }
 
 const currentPath = ref(window.location.hash)
@@ -33,10 +39,28 @@ const currentView = computed(() => {
           @click="drawer = !drawer"
       ></v-list-item>
       <v-list-item
-          prepend-icon="mdi-information-variant-circle-outline"
-          href="#/about"
-          title="About Us"
+          prepend-icon="mdi-map-marker"
+          href="#/location"
+          title="Locations"
           @click="drawer = !drawer"
+      ></v-list-item>
+      <v-list-item
+        prepend-icon="mdi-gift"
+        href="#/registry"
+        title="Registry"
+        @click="drawer = !drawer"
+      ></v-list-item>
+      <v-list-item
+          prepend-icon="mdi-pencil-box"
+          href="#/rsvp"
+          title="RSVP"
+          @click="drawer = !drawer"
+      ></v-list-item>
+      <v-list-item
+        prepend-icon="mdi-image-multiple"
+        href="#/photos"
+        title="Photos"
+        @click="drawer = !drawer"
       ></v-list-item>
     </v-navigation-drawer>
     <v-app-bar
