@@ -15,7 +15,7 @@
 
 <template>
   <v-row>
-    <v-col class="d-flex">
+    <v-col class="d-none d-md-flex">
       <v-img src="vine-flower.jpg" class="flower" width="20%" cover></v-img>
     </v-col>
     <v-col>
@@ -29,7 +29,7 @@
       <p class="text-center text-h5">Both of us are excited to share this special day with you! This is the one stop
         shop to get addresses, RSVP, access our registry, and upload photos of our special day!</p>
     </v-col>
-    <v-col class="d-flex justify-end">
+    <v-col class="d-none d-md-flex justify-end">
       <v-img src="vine-flower.jpg" class="flower" width="20%" cover></v-img>
     </v-col>
   </v-row>

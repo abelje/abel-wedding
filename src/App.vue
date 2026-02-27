@@ -24,6 +24,10 @@ window.addEventListener('hashchange', () => {
 const currentView = computed(() => {
   return routes[currentPath.value.slice(1) || '/'] || NotFound
 })
+
+const barHeight = () => {
+  return "100";
+}
 </script>
 
 <template>
@@ -65,10 +69,11 @@ const currentView = computed(() => {
     </v-navigation-drawer>
     <v-app-bar
         class="text-white"
-        height="200"
+        density="default"
+        height="100"
         color="green-darken-4">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-app-bar-title class="text-h1 text-center cedarville-cursive-regular">Jon & Kristen</v-app-bar-title>
+      <v-app-bar-title class="text-center cedarville-cursive-regular bar">Jon & Kristen</v-app-bar-title>
     </v-app-bar>
     <v-main>
       <component :is="currentView"></component>
@@ -84,5 +89,19 @@ const currentView = computed(() => {
   font-style: normal;
   line-height: 4;
 }
-
+.bar {
+  font-size: 50px;
+}
+@media (max-width: 800px) {
+  .cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 200;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 4;
+  }
+  .bar {
+    font-size: 35px;
+  }
+}
 </style>
