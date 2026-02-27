@@ -1,14 +1,21 @@
 <script setup>
 import { ref, computed } from 'vue'
 import home from './home.vue'
-import about from './about.vue'
+import location from './location.vue'
+import rsvp from "./rsvp.vue";
+import registry from "./registry.vue";
+import photos from './photos.vue'
 
 const routes = {
   '/': home,
-  '/about': about
+  '/location': location,
+  '/rsvp': rsvp,
+  '/registry': registry,
+  '/photos': photos
 }
 
 const currentPath = ref(window.location.hash)
+const drawer = ref(false)
 
 window.addEventListener('hashchange', () => {
   currentPath.value = window.location.hash
@@ -17,11 +24,84 @@ window.addEventListener('hashchange', () => {
 const currentView = computed(() => {
   return routes[currentPath.value.slice(1) || '/'] || NotFound
 })
+
+const barHeight = () => {
+  return "100";
+}
 </script>
 
 <template>
-  <a href="#/">Home</a> |
-  <a href="#/about">About</a>
-
-  <component :is="currentView"></component>
+  <v-app>
+    <v-navigation-drawer class="text-white"
+                         v-model="drawer"
+                         color="green-darken-3"
+    >
+      <v-list-item
+          prepend-icon="mdi-home"
+          href="#/"
+          title="Home"
+          @click="drawer = !drawer"
+      ></v-list-item>
+      <v-list-item
+          prepend-icon="mdi-map-marker"
+          href="#/location"
+          title="Locations"
+          @click="drawer = !drawer"
+      ></v-list-item>
+      <v-list-item
+        prepend-icon="mdi-gift"
+        href="#/registry"
+        title="Registry"
+        @click="drawer = !drawer"
+      ></v-list-item>
+      <v-list-item
+          prepend-icon="mdi-pencil-box"
+          href="#/rsvp"
+          title="RSVP"
+          @click="drawer = !drawer"
+      ></v-list-item>
+      <v-list-item
+        prepend-icon="mdi-image-multiple"
+        href="#/photos"
+        title="Photos"
+        @click="drawer = !drawer"
+      ></v-list-item>
+    </v-navigation-drawer>
+    <v-app-bar
+        class="text-white"
+        density="default"
+        height="100"
+        color="green-darken-4">
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-title class="text-center cedarville-cursive-regular bar">Jon & Kristen</v-app-bar-title>
+    </v-app-bar>
+    <v-main>
+      <component :is="currentView"></component>
+    </v-main>
+    <v-footer app="false">Copyright 2026</v-footer>
+  </v-app>
 </template>
+
+<style scoped>
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 4;
+}
+.bar {
+  font-size: 50px;
+}
+@media (max-width: 800px) {
+  .cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 200;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 4;
+  }
+  .bar {
+    font-size: 35px;
+  }
+}
+</style>
