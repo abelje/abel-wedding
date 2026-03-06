@@ -39,6 +39,7 @@
         md="4"
     >
       <LocationCard
+          :title="loc.title"
           :time="loc.time"
           :address="loc.address"
           :name="loc.name"

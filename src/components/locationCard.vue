@@ -1,5 +1,6 @@
 <script setup>
 const props = defineProps({
+  title: {type:String, required:true},
   name: {type: String, required: true},
   address: {type: String, required: true},
   time: {type: String, required: true},
@@ -15,7 +16,8 @@ const props = defineProps({
     <div v-html="image" class="d-flex justify-center">
 
     </div>
-    <v-card-title class="text-h6">{{ name }}</v-card-title>
+    <v-card-title class="text-h5">{{ title }}</v-card-title>
+    <v-card-title class="text-sm-h6">{{ name }}</v-card-title>
     <v-card-subtitle>
       <v-icon size="small" class="mr-1">mdi-alarm</v-icon>
       {{ time }}
