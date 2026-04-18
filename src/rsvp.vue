@@ -1,8 +1,41 @@
 <script setup>
 import SectionHeader from "@/components/sectionHeader.vue";
+import {onMounted, ref} from "vue";
 
-import {ref} from "vue";
 let people = ref(0)
+const loading = ref(true)
+const error = ref('')
+
+async function loadRSVP() {
+  loading.value = true
+  error.value = ''
+
+  try {
+    // const res1 = await fetch('http://localhost:3000/rsvp/formapi')
+    const response = await fetch('http://localhost:3000/rsvp')
+
+    if (!response.ok) {
+      throw new Error('Failed to load locations.')
+    }
+
+    const data = await response.json()
+
+    for (const d of data) {
+      console.log(d);
+      people.value += d.people;
+    }
+  }
+  catch(err) {
+    error.value = err.message || 'Something went wrong while loading rsvps'
+  }
+  finally {
+    loading.value = false
+  }
+}
+
+  onMounted(() => {
+    loadRSVP()
+  })
 </script>
 
 <template>
