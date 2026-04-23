@@ -11,11 +11,10 @@ async function loadRSVP() {
   error.value = ''
 
   try {
-    // const res1 = await fetch('http://localhost:3000/rsvp/formapi')
     const response = await fetch('http://localhost:3000/rsvp')
 
     if (!response.ok) {
-      throw new Error('Failed to load locations.')
+      throw new Error('Failed to load rsvps.')
     }
 
     const data = await response.json()
