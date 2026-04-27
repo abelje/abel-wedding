@@ -28,6 +28,11 @@
       <br>
       <p class="text-center text-h5">Both of us are excited to share this special day with you! This is the one stop
         shop to get addresses, RSVP, access our registry, and upload photos of our special day!</p>
+      <br>
+      <br>
+      <v-divider/>
+      <h2 class="text-center">Contact Us!</h2>
+      <p class="text-center text-h6">Any questions can be directed to jonkristenabel@gmail.com.</p>
     </v-col>
     <v-col class="d-none d-md-flex justify-end">
       <v-img src="vine-flower.jpg" class="flower" width="20%" cover></v-img>
