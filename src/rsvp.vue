@@ -11,7 +11,7 @@ async function loadRSVP() {
   error.value = ''
 
   try {
-    const response = await fetch('http://localhost:3000/rsvp')
+    const response = await fetch('/api/rsvp')
 
     if (!response.ok) {
       throw new Error('Failed to load rsvps.')

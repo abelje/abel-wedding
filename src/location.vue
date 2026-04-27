@@ -11,7 +11,7 @@
     error.value = ''
 
     try {
-      const response = await fetch('http://localhost:3000/locations')
+      const response = await fetch('/api/locations')
 
       if (!response.ok) {
         throw new Error('Failed to load locations.')
