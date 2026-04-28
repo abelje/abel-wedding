@@ -47,25 +47,26 @@
       title="Locations"
       subtitle="Here is all the places of interest for our wedding!"
   />
-
-  <v-row class="md-2 d-flex justify-center mt-4">
-    <v-col
-        v-for="loc in locations"
-        :key="loc.id"
-        cols="12"
-        sm="6"
-        md="4"
-    >
-      <LocationCard
-          :title="loc.title"
-          :time="loc.time"
-          :address="loc.address"
-          :name="loc.name"
-          :image="loc.image"
-          :description="loc.description"
-      ></LocationCard>
-    </v-col>
-  </v-row>
+  <v-container class="px-3 px-sm-6">
+    <v-row class="d-flex justify-center mt-4">
+      <v-col
+          v-for="loc in locations"
+          :key="loc.id"
+          cols="12"
+          sm="6"
+          md="4"
+      >
+        <LocationCard
+            :title="loc.title"
+            :time="loc.time"
+            :address="loc.address"
+            :name="loc.name"
+            :image="loc.image"
+            :description="loc.description"
+        ></LocationCard>
+      </v-col>
+    </v-row>
+  </v-container>
 
 </template>
 

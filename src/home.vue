@@ -14,7 +14,7 @@
 </script>
 
 <template>
-  <v-row>
+  <v-row no-gutters>
     <v-col class="d-none d-md-flex">
       <v-img src="vine-flower.jpg" class="flower" width="20%" cover></v-img>
     </v-col>

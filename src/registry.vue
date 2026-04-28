@@ -46,12 +46,15 @@
 
   <v-btn class="mt-4 ml-4 mb-6 bg-green-darken-2" v-for="registry in registries" :key="registry" :href="registry.link">{{ registry.name }}</v-btn>
   <v-divider></v-divider>
-  <v-row>
+  <v-row no-gutters>
     <v-col class="ml-4 mr-4">
       <h1>Thank You!</h1>
       <p class="ma-5">We are thrilled to have you come celebrate with us! Thank you for supporting us as we head into a exciting new
         stage of our lives. If you would like to support us with a gift, a link to our registry is above.</p>
       <br>
+      <div class="d-flex justify-center mb-5">
+        <v-img src="winterfest.jpg" class="border-solid d-sm-flex" width="50%" max-width="500" style="margin-top: 5%"></v-img>
+      </div>
     </v-col>
     <v-col class="d-flex mt-2 justify-center">
       <iframe src="https://registry.theknot.com/kristen-danielewicz-jonathan-abel-june-2027-in/73629386" title="The Knot Registry" width="700" height="750"></iframe>

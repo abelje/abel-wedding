@@ -42,16 +42,23 @@ async function loadRSVP() {
       title="RSVP"
       subtitle="Tell us that you are coming to our wedding. We are excited to have you!"
   />
-  <v-row>
+  <v-row no-gutters>
     <v-col class="text-center">
-      <h1>Insert Save the Date Here</h1>
+      <v-img src="save-the-date.png" class="ml-5 mt-2 mr-5"></v-img>
+      <p class="text-right mr-5 mt-1">Credits: Kimberly Danielewicz</p>
+      <div class="d-sm-none">
+        <v-divider></v-divider>
+        <v-btn class="mt-4 mb-4 bg-green-darken-2" href="https://docs.google.com/forms/d/e/1FAIpQLSc4A4XYOetMNWCB8S3X696uB6j3qV0-WoQ9OXV9WKCai0-WRA/viewform?embedded=true">RSVP Form</v-btn>
+        <v-divider></v-divider>
+        <h1 class="">RSVP'd: {{ people }}</h1>
+      </div>
     </v-col>
-    <v-col>
-      <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSc4A4XYOetMNWCB8S3X696uB6j3qV0-WoQ9OXV9WKCai0-WRA/viewform?embedded=true"
-          width="640" height="905" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+    <v-col class="d-flex justify-center">
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc4A4XYOetMNWCB8S3X696uB6j3qV0-WoQ9OXV9WKCai0-WRA/viewform?embedded=true"
+              style="width: 100%; min-width: 320px; max-width: 640px; height: 905px;" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
     </v-col>
-    <v-col class="text-center">
+    <v-col class="d-none d-md-block text-center">
       <v-btn class="mt-4 bg-green-darken-2" href="https://docs.google.com/forms/d/e/1FAIpQLSc4A4XYOetMNWCB8S3X696uB6j3qV0-WoQ9OXV9WKCai0-WRA/viewform?embedded=true">RSVP Form</v-btn>
       <br><br><br>
       <h1 class="">RSVP'd: {{ people }}</h1>
