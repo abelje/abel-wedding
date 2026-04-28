@@ -1,16 +1,11 @@
-# abel-wedding
-This will be a website that will host wedding information.
+# Abel Wedding Website
+This website hosts wedding information and allows people to RSVP and upload photos at the wedding.
 
-## Workflow - Make The Website Serve Up on Linode
-- make sure any images are in the public folder
-- ```npm run build```
-- copy and paste contents of dist folder into resources
-- Upload and Pull onto the server using
-  - ```cd /var/www/html```
-  - Then navigate to your cloned folder
-  - run ```git pull```
+The Database API for this website is [here](https://github.com/abelje/abel-wedding-database).
 
-## New Workflow
+The Live Demo for this website is [jonandkristenwedding.com](https://jonandkristenwedding.com).
+
+## Workflow
 Get Github to push the website to your page without moving it yourself.
 - Main Website Github page
   - Actions
