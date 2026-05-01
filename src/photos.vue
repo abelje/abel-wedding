@@ -1,5 +1,4 @@
 <script setup>
-
 import SectionHeader from "@/components/sectionHeader.vue";
 </script>
 

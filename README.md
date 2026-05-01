@@ -5,6 +5,9 @@ The Database API for this website is [here](https://github.com/abelje/abel-weddi
 
 The Live Demo for this website is [jonandkristenwedding.com](https://jonandkristenwedding.com).
 
+The Ente iframe can be replaced with your own by replacing the iframe code in photos.vue. More information can be found
+[here](https://ente.com/help/photos/features/sharing-and-collaboration/embed).
+
 ## Workflow
 Get Github to push the website to your page without moving it yourself.
 - Main Website Github page

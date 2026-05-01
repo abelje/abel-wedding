@@ -45,7 +45,7 @@
 <template>
   <SectionHeader
       title="Locations"
-      subtitle="Here is all the places of interest for our wedding!"
+      subtitle="Here are all the places of interest for our wedding!"
   />
   <v-container class="px-3 px-sm-6">
     <v-row class="d-flex justify-center mt-4">

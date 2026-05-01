@@ -20,7 +20,6 @@ async function loadRSVP() {
     const data = await response.json()
 
     for (const d of data) {
-      console.log(d);
       people.value += d.people;
     }
   }
