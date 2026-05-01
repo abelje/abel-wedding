@@ -24,10 +24,6 @@ window.addEventListener('hashchange', () => {
 const currentView = computed(() => {
   return routes[currentPath.value.slice(1) || '/'] || NotFound
 })
-
-const barHeight = () => {
-  return "100";
-}
 </script>
 
 <template>

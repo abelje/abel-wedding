@@ -44,10 +44,4 @@
   .flower {
     position: absolute;
   }
-  .cedarville-cursive-regular {
-    font-family: "Cedarville Cursive", cursive;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
 </style>
