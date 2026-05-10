@@ -13,7 +13,7 @@ import SectionHeader from "@/components/sectionHeader.vue";
   <v-divider></v-divider>
 <!--  Use ente for embed code-->
   <div class="d-flex justify-center mt-10 mr-3 ml-3">
-    <iframe src="https://embed.ente.io/?t=5VJCIENTQW#GEDqz9zWC1kDRiJNPKvP2UxS6jtFjWMpucitrbn2ZC88" width="800" height="600" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://embed.ente.com/?t=HL7JP9B6PU#GEDqz9zWC1kDRiJNPKvP2UxS6jtFjWMpucitrbn2ZC88" width="800" height="600" frameborder="0" allowfullscreen></iframe>
   </div>
 </template>
 
