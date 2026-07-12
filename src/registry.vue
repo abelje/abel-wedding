@@ -53,11 +53,11 @@
         stage of our lives. If you would like to support us with a gift, a link to our registry is above.</p>
       <br>
       <div class="d-flex justify-center mb-5">
-        <v-img src="winterfest.jpg" class="border-solid d-sm-flex" width="50%" max-width="500" style="margin-top: 5%"></v-img>
+        <v-img src="Favorites/DSCN1246.JPG.jpg" class="border-solid d-sm-flex" width="50%" max-width="800" style="margin-top: 5%"></v-img>
       </div>
     </v-col>
     <v-col class="d-flex mt-2 justify-center">
-      <iframe src="https://registry.theknot.com/kristen-danielewicz-jonathan-abel-june-2027-in/73629386" title="The Knot Registry" width="700" height="750"></iframe>
+      <iframe src="https://registry.theknot.com/kristen-danielewicz-jonathan-abel-june-2027-in/73629386" title="The Knot Registry" width="700" height="815"></iframe>
     </v-col>
   </v-row>
 
