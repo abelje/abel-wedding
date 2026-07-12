@@ -20,7 +20,7 @@
     </v-col>
     <v-col>
       <v-container class="d-flex justify-center">
-        <v-img src="winterfest.jpg" class="border-solid" width="50%" style="margin-top: 5%"></v-img>
+        <v-img src="Favorites/DSCN1097.JPG.jpg" class="border-solid" width="50%" style="margin-top: 5%"></v-img>
       </v-container>
       <h1 class="text-center">June 5, 2027 - Crete, IL</h1>
       <v-divider/>
