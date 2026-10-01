@@ -45,8 +45,11 @@
 <template>
   <SectionHeader
       title="Locations"
-      subtitle="Here are all the places of interest for our wedding!"
+      subtitle="Here are all the places of interest for our wedding! Hotel Reservation Blocks are linked below:"
   />
+    <v-btn class="ma-4 bg-green-darken-2" href="https://group.hamptoninn.com/z2rl7h">Hampton Inn Hotel Block</v-btn>
+    <v-btn class="ma-4 bg-green-darken-2" href="https://www.choicehotels.com/reservations/groups/OD40S98">Comfort Inn Hotel Block</v-btn>
+    <v-divider></v-divider>
   <v-container class="px-3 px-sm-6">
     <v-row class="d-flex justify-center mt-4">
       <v-col
